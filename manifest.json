@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Trello Cards Extractor",
+  "version": "1.0",
+  "description": "Extrae y muestra los títulos de las tarjetas de Trello",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["*://trello.com/*"],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  }
+}
